@@ -1,5 +1,5 @@
 {
-    "name": "dc/magento2-google-recaptcha",
+    "name": "dconline/magento2-google-recaptcha",
     "description": "N/A",
     "require": {
         "php": "^7.0|^7.1",

@@ -6,11 +6,11 @@ use Magento\Store\Model\ScopeInterface;
 
 class Config extends AbstractHelper
 {
-    const XML_PATH_ENABLED_FRONTEND = 'google/recaptcha/frontend/enabled';
-    const XML_PATH_ENABLED_FRONTEND_CREATE = 'google/recaptcha/frontend/enabled_create';
+    const XML_PATH_ENABLED_FRONTEND = 'google_recaptcha/frontend/enabled';
+    const XML_PATH_ENABLED_FRONTEND_CREATE = 'google_recaptcha/frontend/enabled_create';
 
-    const XML_PATH_PUBLIC_KEY = 'google/recaptcha/publickey';
-    const XML_PATH_PRIVATE_KEY = 'google/recaptcha/privatekey';
+    const XML_PATH_PUBLIC_KEY = 'google_recaptcha/publickey';
+    const XML_PATH_PRIVATE_KEY = 'google_recaptcha/privatekey';
 
     /**
      * @return bool

@@ -75,7 +75,7 @@ class CreateUserObserver implements ObserverInterface
         $remoteIp = $this->remoteAddress->getRemoteAddress();
         // 验证recaptcha
         if (!$this->validate->validate($reCaptchaResponse, $remoteIp)) {
-            $this->messageManager->addErrorMessage('recaptcha error');
+            $this->messageManager->addErrorMessage(__('recaptcha error'));
             // 取消操作
             $this->actionFlag->set('', Action::FLAG_NO_DISPATCH, true);
             // 把数据设置到session

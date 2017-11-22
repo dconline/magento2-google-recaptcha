@@ -2,19 +2,21 @@
 namespace Dc\GoogleReCaptcha\Block;
 
 use Dc\GoogleReCaptcha\Helper\Config;
+use Magento\Framework\View\Element\Template;
+use Magento\Framework\View\Element\Template\Context;
 
-class ReCaptchaJs extends \Magento\Framework\View\Element\Template
+class ReCaptchaJs extends Template
 {
     /** @var Config */
     private $config;
 
     /**
-     * @param \Magento\Framework\View\Element\Template\Context $context
+     * @param Context $context
      * @param Config $config
      * @param array $data
      */
     public function __construct(
-        \Magento\Framework\View\Element\Template\Context $context,
+        Context $context,
         Config $config,
         array $data = []
     ) {
@@ -23,7 +25,7 @@ class ReCaptchaJs extends \Magento\Framework\View\Element\Template
     }
 
     /**
-     * @return string
+     * @inheritDoc
      */
     protected function _toHtml() // @codingStandardsIgnoreLine
     {

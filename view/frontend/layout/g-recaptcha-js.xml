@@ -3,7 +3,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceContainer name="head.additional">
-            <block ifconfig="google_recaptcha/frontend/enabled" class="Dc\GoogleReCaptcha\Block\ReCaptchaJs" name="g-recaptcha-js" template="g-recaptcha-js.phtml" />
+            <block class="Dc\GoogleReCaptcha\Block\ReCaptchaJs" name="g-recaptcha-js" template="Dc_GoogleReCaptcha::g-recaptcha-js.phtml" />
         </referenceContainer>
     </body>
 </page>

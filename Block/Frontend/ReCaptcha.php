@@ -2,19 +2,21 @@
 namespace Dc\GooglereCaptcha\Block\Frontend;
 
 use Dc\GoogleReCaptcha\Helper\Config;
+use Magento\Framework\View\Element\Template;
+use Magento\Framework\View\Element\Template\Context;
 
-class ReCaptcha extends \Magento\Framework\View\Element\Template
+class ReCaptcha extends Template
 {
     /** @var Config */
     private $config;
 
     /**
-     * @param \Magento\Framework\View\Element\Template\Context $context
+     * @param Context $context
      * @param Config $config
      * @param array $data
      */
     public function __construct(
-        \Magento\Framework\View\Element\Template\Context $context,
+        Context $context,
         Config $config,
         array $data = []
     ) {
@@ -23,7 +25,7 @@ class ReCaptcha extends \Magento\Framework\View\Element\Template
     }
 
     /**
-     * @return string
+     * @inheritDoc
      */
     protected function _toHtml() // @codingStandardsIgnoreLine
     {
@@ -31,6 +33,7 @@ class ReCaptcha extends \Magento\Framework\View\Element\Template
     }
 
     /**
+     * 返回google recaptcha的site key
      * @return string
      */
     public function getPublicKey()

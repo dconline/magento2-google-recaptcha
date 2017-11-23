@@ -1,5 +1,5 @@
 <?php
-namespace Dc\GooglereCaptcha\Block\Frontend;
+namespace Dc\GoogleReCaptcha\Block\Frontend;
 
 use Dc\GoogleReCaptcha\Helper\Config;
 use Magento\Framework\View\Element\Template;
